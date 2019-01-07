@@ -3,24 +3,43 @@
 <html>
 <head>
   <title> Rock Paper Scissors</title>
+  <link rel="stylesheet" href="RPS-Style.css">
 </head>
 
 <body style="background-color:#FBFAF8; font-family:sans-serif;">
 
 
-  <h1><center>Welcome to Rock Paper Scissors</center></h1>
+  <h1 style="text-align:center;">Welcome to Rock Paper Scissors</h1>
 
-  <p><center>First to win 3 games Wins!</center></p>
-  <p><center>Choose your weapon:</center></p>
+  <p style="text-align:center;">First to win 5 games Wins!</p>
+  <p style="text-align:center;">Choose your weapon:</p>
 
-  <div><center>
-    <button onclick = "rockChoice()">ROCK</button>
-    <button onclick = "paperChoice()">PAPER</button>
-    <button onclick = "scissorChoice()">SCISSORS </button>
-  </center></div>
+  <div id="container"; class="btn"; style="text-align:center;">
+    <button id="rock">ROCK</button>
+    <button id="paper">PAPER</button>
+    <button id="scissors">SCISSORS </button>
+</div>
+
+<div style="text-align:center; ">
+  <div style= "width:700px; float: left;">
+    Your score:
+    <p id='plyScore'>0 </p>
+  </div>
+
+  <div style= "width:700px; float: right;">
+    Computer's score:
+    <p id ='comScore'>0 </p>
+  </div>
 
 
-  <script src="rock-paper-scissor.js"></script>
+  <div id="res">
+    <p>Game Results:</p>
+    <p id = "gameRes"></p>
+  </div>
+</div>
+
+
+  <script src="NewRPS-Code.js"></script>
 
 </body>
 
